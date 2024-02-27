@@ -88,14 +88,14 @@ export const ContatosContainer = styled.div`
 `;
 
 export const RedesSociais = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 34px;
   margin-top: 16px;
   padding-bottom: 0;
 
   img {
-    width: 30px;
+    width: 50px;
     cursor: pointer;
   }
 `;

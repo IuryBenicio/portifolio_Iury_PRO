@@ -4,13 +4,13 @@ import { ContatosContainer, RedesSociais, ContainerForm } from "./styles";
 import Gmail from "../../assets/socialmedia/gmail-svgrepo-com (1).svg";
 import Instagram from "../../assets/socialmedia/instagram-167-svgrepo-com.svg";
 import Whats from "../../assets/socialmedia/whatsapp-128-svgrepo-com.svg";
-import Linkedin from "../../assets/socialmedia/linkedin-svgrepo-com (1).svg";
-import { useState } from "react";
-import DownArrow from "../../assets/icons/down-arrow-svgrepo-com.svg";
-import UpArrow from "../../assets/icons/up-arrow-svgrepo-com.svg";
+import Linkedin from "../../assets/socialmedia/linkedin-svgrepo-com.svg";
+// import { useState } from "react";
+// import DownArrow from "../../assets/icons/down-arrow-svgrepo-com.svg";
+// import UpArrow from "../../assets/icons/up-arrow-svgrepo-com.svg";
 
 const Contatos = () => {
-  const [contatos, setContatos] = useState(false);
+  // const [contatos, setContatos] = useState(false);
 
   // const form = useFormik({
   //   initialValues: {
@@ -41,13 +41,13 @@ const Contatos = () => {
     <ContatosContainer className="container">
       <div className="Title">
         <h2>Entrar em contato</h2>
-        <img
+        {/* <img
           onClick={() => setContatos(!contatos)}
           src={contatos ? DownArrow : UpArrow}
           alt="Abrir contatos"
-        />
+        /> */}
       </div>
-      <ContainerForm className={contatos ? "is_on" : ""}>
+      <ContainerForm className="is_on">
         {/* <form onSubmit={form.handleSubmit}>
           <label htmlFor="NomeUsuario">
             <span>Nome:</span>
@@ -106,6 +106,7 @@ const Contatos = () => {
             alt=""
           />
           <img
+            className="linkedin"
             onClick={() =>
               openNewTab("https://www.linkedin.com/in/iurybenicio/")
             }
