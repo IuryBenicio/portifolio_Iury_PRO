@@ -1,13 +1,45 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const ContatosExpand = keyframes`
+  0%{
+    height: 0;
+  }
+
+  50%{
+    height: 50%;
+  }
+  
+  100%{
+    height: 100%;
+  }
+`;
+
+export const ContainerForm = styled.div`
+  height: 0;
+  overflow: hidden;
+  &.is_on {
+    padding-top: 25px;
+    animation: ${ContatosExpand} 1s ease both;
+  }
+`;
 
 export const ContatosContainer = styled.div`
-  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
   width: 500px;
   .Title {
     font-size: 25px;
     text-align: center;
     color: white;
-    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
   }
   &:not(:first-child) {
     display: flex;
@@ -25,7 +57,7 @@ export const ContatosContainer = styled.div`
       }
       input,
       textarea {
-        border-radius: 8px;
+        /* border-radius: 8px; */
         padding: 5px;
         width: 100%;
         margin-top: 8px;
@@ -47,7 +79,7 @@ export const ContatosContainer = styled.div`
     }
     button:hover {
       background-color: #5bcfe3;
-      transform: scale(1.04);
+      border-radius: 0;
     }
     button:active {
       background-color: #5ba4e3;
@@ -63,7 +95,7 @@ export const RedesSociais = styled.div`
   padding-bottom: 0;
 
   img {
-    width: 60px;
+    width: 30px;
     cursor: pointer;
   }
 `;
