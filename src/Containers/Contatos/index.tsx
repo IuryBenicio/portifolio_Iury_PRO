@@ -85,7 +85,7 @@ const Contatos = () => {
         </form> */}
         <RedesSociais>
           <img
-            onClick={() => openNewTab("iury620@gmail.com")}
+            onClick={() => openNewTab("mailto:iury620@gmail.com?")}
             src={Gmail}
             alt=""
           />

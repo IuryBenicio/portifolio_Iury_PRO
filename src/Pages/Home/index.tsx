@@ -1,7 +1,7 @@
 import { HomeContainer, ContainerHomeContent } from "./styles";
 
 import PerfilComponent from "../../Components/Perfil";
-import AsideMenu from "../../Components/AsideMenu";
+// import AsideMenu from "../../Components/AsideMenu";
 import TecnologiasCarousel from "../../Containers/Tecnologias";
 import ProjectsSection from "../../Containers/Projects";
 import Footer from "../../Components/Footer";
@@ -12,7 +12,7 @@ const Home = () => {
     <HomeContainer>
       <ContainerHomeContent>
         <>
-          <AsideMenu />
+          {/* <AsideMenu /> */}
           <section>
             <PerfilComponent />
             <hr />

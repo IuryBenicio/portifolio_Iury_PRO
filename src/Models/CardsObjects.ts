@@ -1,7 +1,7 @@
 import Base from "../assets/projects/BaseLanding.png";
 import DeVolta from "../assets/projects/De volta para o futuro.png";
 import efood from "../assets/projects/Efood.png";
-import Mymesage from "../assets/projects/MyMensage.png";
+// import Mymesage from "../assets/projects/MyMensage.png";
 
 export type cardModel = {
   id: string;
@@ -35,12 +35,12 @@ export const CardModels: cardModel[] = [
     description:
       "Blog em homenagem a um dos filmes que mais amo, De volta para o futuro",
   },
-  {
-    id: "4",
-    img: Mymesage,
-    link: "https://mymensage.onrender.com/",
-    title: "MyMesenger",
-    description:
-      "Um site estilo mesenger super simples e prático para conversas descartáveis e anônimas",
-  },
+  // {
+  //   id: "4",
+  //   img: Mymesage,
+  //   link: "https://mymensage.onrender.com/",
+  //   title: "MyMesenger",
+  //   description:
+  //     "Um site estilo mesenger super simples e prático para conversas descartáveis e anônimas",
+  // },
 ];
