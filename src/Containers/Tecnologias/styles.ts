@@ -19,4 +19,5 @@ export const SlideImg = styled.img`
   max-width: 50%;
   max-height: 50%;
   color: white;
+  fill: white;
 `;

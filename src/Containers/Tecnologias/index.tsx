@@ -10,6 +10,8 @@ import JS from "../../assets/logo/js01-svgrepo-com.svg";
 import SASS from "../../assets/logo/sass-svgrepo-com.svg";
 import styledComponents from "../../assets/logo/styled-components-svgrepo-com.svg";
 import redux from "../../assets/logo/redux-fill-svgrepo-com.svg";
+import mongoDB from "../../assets/logo/mongodb-svgrepo-com.svg";
+import nodeJs from "../../assets/logo/node-16-svgrepo-com.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -31,6 +33,9 @@ const TecnologiasCarousel = () => {
     { id: "8", image: JS },
     { id: "9", image: styledComponents },
     { id: "10", image: redux },
+    { id: "11", image: mongoDB },
+    { id: "12", image: nodeJs },
+    //...Adicionar mais tecnologias aqui...
   ];
 
   return (

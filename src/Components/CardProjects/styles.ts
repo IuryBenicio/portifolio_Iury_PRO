@@ -11,7 +11,7 @@ export const CardContainer = styled.div`
     align-items: center;
   }
   .TextCardContainer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     position: absolute;
     top: 0;
@@ -22,10 +22,27 @@ export const CardContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none;
+    opacity: 0;
+    transition: all 0.5s ease;
   }
   .Card:hover .TextCardContainer {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .em-breve {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
     cursor: pointer;
   }
   a {
@@ -46,6 +63,10 @@ export const CardContainer = styled.div`
   }
   span:hover {
     color: rgba(255, 255, 255, 0.7);
+  }
+  .em-breve {
+    color: white;
+    font-size: 25px;
   }
   p {
     width: 80%;

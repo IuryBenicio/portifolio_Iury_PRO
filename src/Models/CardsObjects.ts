@@ -1,20 +1,22 @@
 import Base from "../assets/projects/BaseLanding.png";
 import DeVolta from "../assets/projects/De volta para o futuro.png";
 import efood from "../assets/projects/Efood.png";
-// import Mymesage from "../assets/projects/MyMensage.png";
+import myMoovies from "../assets/projects/myMoovies.png";
 
 export type cardModel = {
   id: string;
-  link: string;
+  link?: string;
   img: string;
   title: string;
   description: string;
+  status?: boolean;
 };
 
 export const CardModels: cardModel[] = [
   {
     id: "1",
     img: Base,
+    status: true,
     link: "https://base-igreja-crista.vercel.app/",
     title: "Base Igreja Cristã",
     description: "Landing Page feita para uma igreja chamada Base Cristâ",
@@ -22,6 +24,7 @@ export const CardModels: cardModel[] = [
   {
     id: "2",
     img: efood,
+    status: true,
     link: "https://efood-atividade.vercel.app/",
     title: "Efood",
     description:
@@ -30,17 +33,19 @@ export const CardModels: cardModel[] = [
   {
     id: "3",
     img: DeVolta,
+    status: true,
     link: "https://devoltaparaofuturo.vercel.app/",
     title: "Blog de volta para o futuro",
     description:
       "Blog em homenagem a um dos filmes que mais amo, De volta para o futuro",
   },
-  // {
-  //   id: "4",
-  //   img: Mymesage,
-  //   link: "https://mymensage.onrender.com/",
-  //   title: "MyMesenger",
-  //   description:
-  //     "Um site estilo mesenger super simples e prático para conversas descartáveis e anônimas",
-  // },
+  {
+    id: "4",
+    img: myMoovies,
+    link: "#",
+    title: "My Movies!",
+    status: false,
+    description:
+      "A proposta dessa aplicação web é de um site com sistema de cadastro e login em que o usuário tera acesso a milhões de filmes, e poderá criar listas personalizadas com eles. Exemplo: criar uma lista com os seus filmes favoritos, ou com os filmes que você ainda quer assistir naquele mês",
+  },
 ];
