@@ -1,7 +1,7 @@
 import Base from "../assets/projects/BaseLanding.png";
 // import DeVolta from "../assets/projects/De volta para o futuro.png";
 import efood from "../assets/projects/Efood.png";
-import myMoovies from "../assets/projects/myMoovies.png";
+import myMoovies from "../assets/projects/MyMoviesAtualizado.png";
 
 export type cardModel = {
   id: string;
