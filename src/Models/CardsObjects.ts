@@ -1,5 +1,5 @@
 import Base from "../assets/projects/BaseLanding.png";
-import DeVolta from "../assets/projects/De volta para o futuro.png";
+// import DeVolta from "../assets/projects/De volta para o futuro.png";
 import efood from "../assets/projects/Efood.png";
 import myMoovies from "../assets/projects/myMoovies.png";
 
@@ -30,15 +30,15 @@ export const CardModels: cardModel[] = [
     description:
       "Emula o modelo de um site para restaurantes onde possui sistema de pedido, pagamento e validação de dados",
   },
-  {
-    id: "3",
-    img: DeVolta,
-    status: true,
-    link: "https://devoltaparaofuturo.vercel.app/",
-    title: "Blog de volta para o futuro",
-    description:
-      "Blog em homenagem a um dos filmes que mais amo, De volta para o futuro",
-  },
+  // {
+  //   id: "3",
+  //   img: DeVolta,
+  //   status: true,
+  //   link: "https://devoltaparaofuturo.vercel.app/",
+  //   title: "Blog de volta para o futuro",
+  //   description:
+  //     "Blog em homenagem a um dos filmes que mais amo, De volta para o futuro",
+  // },
   {
     id: "4",
     img: myMoovies,
