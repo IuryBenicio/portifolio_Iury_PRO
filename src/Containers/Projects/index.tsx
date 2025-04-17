@@ -19,7 +19,7 @@ const ProjectsSection = () => {
           centeredSlides={true}
           loop={false}
           slidesPerView={"auto"}
-          initialSlide={1}
+          initialSlide={0}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
