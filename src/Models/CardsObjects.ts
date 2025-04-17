@@ -42,10 +42,10 @@ export const CardModels: cardModel[] = [
   {
     id: "4",
     img: myMoovies,
-    link: "#",
+    link: "https://mymoovies.vercel.app/",
     title: "My Movies!",
-    status: false,
+    status: true,
     description:
-      "A proposta dessa aplicação web é de um site com sistema de cadastro e login em que o usuário tera acesso a milhões de filmes, e poderá criar listas personalizadas com eles. Exemplo: criar uma lista com os seus filmes favoritos, ou com os filmes que você ainda quer assistir naquele mês",
+      "aplicação web com sistema de cadastro e login em que o usuário tera acesso a milhões de filmes, e poderá criar listas personalizadas com eles. Exemplo: criar uma lista com os seus filmes favoritos, ou com os filmes que você ainda quer assistir naquele mês",
   },
 ];
